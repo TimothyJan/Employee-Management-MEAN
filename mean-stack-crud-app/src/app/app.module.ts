@@ -7,6 +7,11 @@ import { EmployeeCreateComponent } from './components/employee-create/employee-c
 import { EmployeeEditComponent } from './components/employee-edit/employee-edit.component';
 import { EmployeeListComponent } from './components/employee-list/employee-list.component';
 
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+
+import { ApiService } from './service/api.service';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,9 +21,14 @@ import { EmployeeListComponent } from './components/employee-list/employee-list.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [
+    ApiService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
