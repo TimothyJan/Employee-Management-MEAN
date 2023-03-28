@@ -9,7 +9,7 @@ Backend(/backend):
 </ul>
 Frontend(/mean-stack-crud-app):
 <ul>
-  <li>Start Frontend ~<code>ng serve<code></li>
+  <li>Start Frontend ~<code>ng serve</code></li>
   <li>Angular frontend - <a href="http://localhost:4200">http://localhost:4200</a></li>
 </ul>
 
