@@ -26,7 +26,7 @@ export class ApiService {
   getEmployee(id:string): Observable<any> {
     let url = `${this.baseUri}/read/${id}`;
     return this.http.get(url, { headers: this.headers }).pipe(
-      map((res: Response) => {
+      map((res: any) => {
         return res || {};
       }),
       catchError(this.errorMgmt)
