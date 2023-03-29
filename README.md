@@ -38,6 +38,7 @@ Steps:
   <li>Create Express RESTful APIs
     <ul>
       <li>To test REST API use ~<code>curl -i -H "Accept: application/json" localhost:4000/api</code>. </li>
+      <li>Invoke-WebRequest Error: <a href="https://stackoverflow.com/questions/25044010/running-curl-on-64-bit-windows">Link</a>. ~<code>Remove-item alias:curl</code></li>
     </ul>
   </li>
   <li>Create MEAN Stack Project</li>
